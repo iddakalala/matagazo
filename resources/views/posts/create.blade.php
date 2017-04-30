@@ -16,14 +16,18 @@
   </div>
 
   <button type="submit" class="btn btn-primary">publish</button>
-</form>
-<div class="alert alert-error">
+
+  <div class="form-group">
+  	<div class="alert alert-error">
 <ul>
 	@foreach ($errors->all() as $error)
 	<li>{{ $error }}</li>
 	@endforeach
 </ul>
 </div>
+  </div>
+</form>
+
 
 </div>
 @endsection
