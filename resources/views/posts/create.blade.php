@@ -15,17 +15,11 @@
    <textarea id ="body" class="form-control" name="body"></textarea>
   </div>
 
+<div class="form-group">
   <button type="submit" class="btn btn-primary">publish</button>
-
-  <div class="form-group">
-  	<div class="alert alert-error">
-<ul>
-	@foreach ($errors->all() as $error)
-	<li>{{ $error }}</li>
-	@endforeach
-</ul>
 </div>
-  </div>
+
+@include('layouts.errors')
 </form>
 
 
