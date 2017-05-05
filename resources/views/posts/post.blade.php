@@ -11,4 +11,8 @@
        </p>
 
              {{ $post->body }}
+
+             <p>
+               {{ $post->comments_count }} Comments
+             </p>
        </div><!-- /.blog-post -->

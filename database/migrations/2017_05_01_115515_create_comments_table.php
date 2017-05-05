@@ -15,7 +15,7 @@ class CreateCommentsTable extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('post-id');
+            $table->integer('post_id');
             $table->string('body');
             $table->timestamps();
         });
