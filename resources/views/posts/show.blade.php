@@ -8,7 +8,7 @@
          {{$post->body}}
          <hr>
 
-         <h3>Comments</h3>
+         
 
           <div class="comments">
 
@@ -29,7 +29,17 @@
          <hr>
         <div class="card">
         	<div class="card-block">
-        		hhhhh
+        		<form>
+        		     <h3>your comments here</h3>
+        			<div class="form-group">
+        				<textarea name="body" placeholder="Your Comments here"  class="form-control">
+        					
+        				</textarea>
+        			</div>
+                     <div class="form-group">
+                       <button type="submit" class="btn btn-primary">add comments</button>
+                     </div>
+        		</form>
         	</div>
         </div>
       </div>
