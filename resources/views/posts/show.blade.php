@@ -30,9 +30,11 @@
         <div class="card">
         	<div class="card-block">
         		<form method="POST" action="/posts/{{ $post->id }}/comments">
+                   {{ csrf_field() }}
+
         		     <h3>your comments here</h3>
         			<div class="form-group">
-        				<textarea name="body" placeholder="Your Comments here"  class="form-control">
+        				<textarea name="body" placeholder="Your Comments here "  class="form-control">
         					
         				</textarea>
         			</div>
